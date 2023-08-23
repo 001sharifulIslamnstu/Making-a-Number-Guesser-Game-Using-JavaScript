@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d4d77, #f2dfdc);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  backdrop-filter: blur(10px); /* Add the blur effect */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#restartButton {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
